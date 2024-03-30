@@ -8,32 +8,56 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>so.. i am hkamori.</title>
     <style>
-        h5 { color: white; }
-        p { color: white; }
+        h5, p { color: white; }
         .gradient-border {
             border: 10px solid transparent;
             border-image: linear-gradient(to right, #0000FF, #0000CD, #00008B, #000080, #191970);
             border-image-slice: 1;
         }
-
         /* Media Query for smaller devices */
         @media (max-width: 576px) {
             .card {
                 width: 90%;
             }
         }
+        .typewriter {
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation: typing 5s infinite;
+        }
+
+        .typewriter::after {
+        content: '|'; /* blinking cursor */
+        animation: blink-caret .75s step-end infinite;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+        0% { width: 0; }
+        40% { width: 100%; } /* Typing effect */
+        65% { width: 100%; } /* Hold the text */
+        100% { width: 0; }    /* Erase text */
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+        from, to { opacity: 0; }
+        50% { opacity: 1; }
+        }
+
+
     </style>
 </head>
 <body style="background-color: rgb(43, 43, 43);">
     <div class="card shadow bg-dark position-absolute top-50 start-50 translate-middle gradient-border">
         <img class="card-img-top" src="https://i.pinimg.com/originals/62/7f/fa/627ffa8faacfee2c52110c63541eb926.gif" alt="Card image">
         <div class="card-body text-center py-5">
-            <h5 class="card-title" style="color: white; margin-top: 5%;">hkamori.</h5>
+            <h5 class="card-title typewriter" style="margin-top: 5%; color: white;">hkamori</h5>
             <p class="card-text">глупец доверил свою душу полководцу</p>
             <a href="https://t.me/hkamori" class="btn btn-dark" style="background-color: blue;">Telegram</a>
             <a href="https://github.com/hkamori" class="btn btn-dark my-1" style="background-color: blue;">Github</a>
             <a href="https://www.tiktok.com/@dezoiiator" class="btn btn-dark" style="background-color: blue;">Tiktok</a>
-            <br>
             <a href="https://www.instagram.com/im.hkmori/" class="btn btn-dark my-1" style="background-color: blue;">Instagram</a>
             <a href="https://discordapp.com/users/821729978860175370" class="btn btn-dark" style="background-color: blue;">Discord</a> 
         </div>
